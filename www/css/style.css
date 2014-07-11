@@ -1,12 +1,62 @@
-/*---------------------remove for cms-----------------------*/
-h1, h2, h3, h4, h5, h6,p{
-	font-family: Publico, Georgia, 'Times New Roman', Times, serif !important;
-}
-html{
+/*---------------------CMS overrides-----------------------*/
+html,h1, h2, h3, h4, h5, h6,p{
 	font-family: Publico, Georgia, 'Times New Roman', Times, serif !important;
 }
 
+.container{
+	width: 100%;
+}
 
+.forcefullwidth{
+	width: 100%;
+}
+.masthead,
+#news-tray,
+.navbar,
+hr.double-rule {
+	display: none;
+}
+
+.mastfoot, #product-bar{
+	width: 75%;
+	margin: auto;
+	margin-left: 12.5%;
+}
+
+del{
+	display: none;
+}
+/*--------------custom Nav-----------------------------*/
+#customNav{
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	top: 0;
+	left: 0;	
+	background: rgba(0,0,0,.6);
+	z-index: 8;
+}
+#customNav a{
+	display: block;
+	top: 3px;
+	left: 30px;
+	position: absolute;
+	height: 40px;
+	width: 250px;	
+}
+
+#customNav a img{
+	vertical-align: inherit;
+	height: 40px;
+}
+#underNav{
+	width: 100%;
+	height: 45px;
+	padding: 0;
+	margin: 0;
+	background: #006cb7;
+	background: gray;
+}
 /*----------------------------cover----------------------*/
 #coverholder{
 	position: relative;
@@ -33,7 +83,7 @@ html{
 	left: 0;
 	bottom: -1px;
 	right: 0;
-	background-image: url('../img/cover.jpg');
+	background-image: url('http://www2.palmbeachpost.com/projects/news/nationalparks/img/cover.jpg');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -123,17 +173,18 @@ html{
 }
 
 /*--------------------------------------section headers-----------------------------------------*/
-.header{
+.section .header{
 	position: relative;
 	overflow: hidden;	
 	width: 100%;
-	margin-bottom: 4%;
+	margin: 30px auto;
+	border-bottom: 1px solid black;
 }
 
 .header h2{
 	position: absolute;
 	bottom: 0;
-	left: 10%;
+	right:0%;
 	background-color: white;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -142,14 +193,11 @@ html{
 	padding: 10px;
 	padding-bottom: 0;
 	margin-bottom: 0;
+	max-width: 50%;
 }
 
-#secheader2 .imgholder .figure{
-	background-image:  url('../img/cover2.jpg');	
-  	background-position: 90% 100%;
-}
-
-#secheader3 .imgholder .figure{
-	background-image:  url('../img/cover3.jpg');	
-  	background-position: 90% 100%;
+.header img{
+	height: 100%;
+	max-width: 50%;
+	vertical-align: inherit;
 }
