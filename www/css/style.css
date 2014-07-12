@@ -121,7 +121,8 @@ del{
 }
 
 #article .section{
-	max-width: 70%;
+	width: 70%;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -171,7 +172,67 @@ del{
 	width: 100%;
 	margin-left: 0;
 }
+/*---------------------------------------pullouts and imgs--------------------------------------*/
+.pullout{
+	min-width:25%;	
+	text-align: left;
+	min-height: 50px;
+	margin-bottom: 2%;
+}
 
+.left{
+	float: left;
+	margin-left: -7%;
+	margin-right: 10px;	
+}
+
+.right{
+	float: right;
+	margin-left: 4%;
+	margin-right: -15%;		
+}
+
+.caption{
+	width:30%;
+	min-height: 50px;
+	color:gray;
+	font-size: 13px;
+	line-height: 16px;
+	padding-top: 10px;
+	background: #f5f4ff;
+	font-style: italic;
+}
+
+.caption.right{
+	padding-left: 15px;
+	padding-right:10px;
+	border-left: 2px solid gray;
+}
+.caption.left{
+	padding-right: 15px;
+	border-right: 2px solid gray;
+}
+
+.photo{
+	width:30%;
+	margin-bottom: 0;
+}
+.photo .imgNcaption img{
+	width:100%;	
+	padding:0;
+}
+
+.photo .imgNcaption p{
+	display: inline-block;
+	width: 100%;
+	min-height: 30px;
+	color:gray;
+	font-size: 13px;
+	line-height: 16px;
+	background: #f5f4ff;
+	font-style: italic;
+	padding-top:5px;
+}
 /*--------------------------------------section headers-----------------------------------------*/
 .section .header{
 	position: relative;
