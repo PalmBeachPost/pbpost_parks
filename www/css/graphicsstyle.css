@@ -1,0 +1,59 @@
+ #controls{
+    display: block;
+    position: relative;
+    height:30px;
+    width: 100%;
+  }
+
+  button#next{
+    display:block;
+    float:right;
+  }
+
+  button#prev{
+    display:block;
+    float:left;
+  }
+
+  #main{
+    margin: auto;
+  }
+
+  #map{
+    background-image: url('../img/basemap.png');
+    background-size: contain;
+    border:1px solid black;
+    width:70%;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+  }
+
+  #map text{
+    font-size: 1em;
+  }
+
+  #thumbs img{
+    width:50px;
+    height: 50px;
+    border: 2px solid gray;
+    margin: 2px;
+  }
+
+  #img{
+    width: 300px;
+    margin: auto;
+  }
+  #img img{
+    width:300px;
+  }
+@media only screen  and  (max-width : 480px){
+  #map,#controls{
+    width:100%;
+    margin: 0;
+  }
+
+  #map text{
+    font-size: .75em;
+  }
+}

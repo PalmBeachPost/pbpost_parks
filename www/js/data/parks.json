@@ -4,13 +4,37 @@
 			"id": 1,
 			"name": "Yellowstone",
 			"lat":44.36,
-			"long":-110.30
+			"long":-110.30,
+			"photos":[
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is caption for this image"
+				},
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is caption for this image 2"
+				}
+			]
 		},		
 		{
 			"id": 2,
 			"name": "Saratoga",
 			"lat":42.998889,
-			"long":-73.6375
+			"long":-73.6375,
+			"photos":[
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is park 2 caption for this image"
+				},
+				{
+					"src":"./img/cover.jpg",
+					"caption":"This is park 2 caption for this image 1"
+				},
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is park 2 caption for this image 1"
+				}
+			]
 		},		
 		{
 			"id": 3,
