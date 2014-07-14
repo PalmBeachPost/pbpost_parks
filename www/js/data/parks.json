@@ -1,0 +1,34 @@
+{"type":"National Parks",
+	"parks":[
+		{
+			"id": 1,
+			"name": "Yellowstone",
+			"lat":44.36,
+			"long":-110.30
+		},		
+		{
+			"id": 2,
+			"name": "Saratoga",
+			"lat":42.998889,
+			"long":-73.6375
+		},		
+		{
+			"id": 3,
+			"name": "Grand Canyon",
+			"lat":36.0552608,
+			"long":-112.1218355
+		},
+		{
+			"id": 4,
+			"name": "Independence",
+			"lat":39.949531,
+			"long":-75.149732
+		},
+		{
+			"id": 5,
+			"name": "Olympic",
+			"lat":47.96935,
+			"long":-123.49856
+		}
+	]
+}

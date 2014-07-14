@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    button{
+      display:block;
+      float:right;
+    }
+    #map{
+      background-image: url('./img/basemap.png');
+      background-size: contain;
+      border:1px solid black;
+      width:100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <button id="next">Next</button>
+    <svg id="map"></svg>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
+    var width = 1000,
+        height = 553,
+        curr = 0;
+
+
+    var xScale = d3.scale.linear()
+          .range([0,width])
+          .domain([-125.2881,-66.6211]);
+
+    var yScale = d3.scale.linear()
+          .range([0,height])
+          .domain([49.6676,25.5]);
+
+        //-125.2881,24.2069,-66.6211,49.6676
+        //olympic= 47.96935,-123.49856;
+        //yellowstone=44.36,-110.30
+
+    var mapDiv = d3.select('#map')
+      .style("height",height+'px')
+      .style("width",width+'px');
+
+    d3.json("./js/data/parks.json", function(error, data) {
+      parkData =data.parks;
+      
+      var points = mapDiv.selectAll(".park")
+        .data(parkData)
+        .enter().append("circle")
+        .attr("class","park")
+        .style("fill",'#ff0000')
+        .attr("r",5)
+        .attr("cx",function(d){return xScale(d.long)})
+        .attr("cy",function(d){return yScale(d.lat)+7})
+        .attr("z-index",100);
+
+      var labels= mapDiv.selectAll(".label")
+        .data(parkData)
+        .enter().append("text")
+        .text(function(d){return d.name;})
+        .attr("x", function(d){return xScale(d.long)+10})
+        .attr("y",function(d){return yScale(d.lat)+12})
+    })
+
+    function animateLine(from,to){
+      var line = d3.svg.line()
+        .interpolate("cardinal")
+        .x(function(d){ return xScale(d.long)})
+        .y(function(d){return yScale(d.lat)+7});
+
+      var path= mapDiv.append("path")
+        .attr("d",line([from,to]))
+        .attr("stroke", "red")
+        .attr("stroke-width",2)
+        .attr("z-index",0);
+
+      var totalLength = path.node().getTotalLength();
+
+      path
+        .attr("stroke-dasharray", totalLength + " " + totalLength)
+        .attr("stroke-dashoffset", totalLength)
+        .transition()
+          .duration(1000)
+          .ease("linear")
+          .attr("stroke-dashoffset", 0);
+    }
+
+    d3.select("#next")
+      .on("click", function(){
+          if(parkData[curr+1])
+          {
+            animateLine(parkData[curr],parkData[curr+1]);
+            curr++;
+          }
+      });
+
+    //d3.select(self.frameElement).style("height", height + "px");
+
+    </script>
+  </body>
+</html>
