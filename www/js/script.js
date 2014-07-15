@@ -10,20 +10,10 @@ $(document).ready(function(){
 function calcLayout(){
 	// calculate cover height
 	var $bgheight=$(window).height();
-	$('#coverholder').css('height', $bgheight+'px');
-	var $secheight =$bgheight*.5;
-	$('.header.withImg').css('height', $secheight+'px');
-
-	/*var $mapWidth = $('#graphic').width();	
-	$('#map').attr("width",$mapWidth+'px')
-	.attr("height",$mapWidth*.65+'px');
-
-	$('#graphic').css('height',$mapWidth*.8+'px');*/
-
-/*
-	//force an iframe reload
-	var ifr = document.getElementById('map');
-	ifr.src = ifr.src;*/
+	$('#coverholder').css('height', $bgheight+'px');	
+	var $secheight =Math.floor(Math.min($bgheight/2,$('#section2').width()/2));
+	$('.header.withImg img').css('height', $secheight+'px');
+	$('.header.withImg h2').css('width',$('#section2').width()-$secheight -30+'px')
 }
 
 function MedleyShiv(){

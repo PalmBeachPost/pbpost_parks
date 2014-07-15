@@ -42,7 +42,7 @@ del{
 	left: 30px;
 	position: absolute;
 	height: 40px;
-	width: 250px;	
+	width: 200px;	
 }
 
 #customNav a img{
@@ -243,10 +243,7 @@ del{
 	height: 10%;
 }
 
-.header h2{
-	position: absolute;
-	bottom: 0;
-	right:0%;
+.header h2{	
 	background-color: white;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -255,7 +252,7 @@ del{
 	padding: 10px;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	max-width: 50%;
+	text-align: left;
 }
 
 .header img{
@@ -267,4 +264,126 @@ del{
 #graphic{
 	width: 600px;
 	width: 100%;
+}
+
+/*--------------------------------------MEDIA QUERIES--------------------------------*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px) {
+	#customNav a{
+		position: static;
+		margin: auto;
+	}
+	#hed{
+		margin: auto;
+	}
+	#hed h1{
+		font-size: 22px;
+		line-height: 20px;
+		width: 75%;
+	}	
+	.right,
+	.left{
+		float: none;
+		margin: 0;
+	}
+	.section .header{
+		margin-bottom: 2px;
+	}
+	.header h2{
+		font-size:1.5em;
+	}
+	.pullout, .caption{
+		width:100%;
+	}
+	.caption.left,
+	.caption.right{
+		padding: 0;
+		border:none;
+		min-height:10px;
+	}
+
+}
+
+@media only screen and (max-width : 768px) {
+	#hed h1{
+		font-size: 35px;
+		line-height: 30px;
+	}	
+	#author{
+		position: relative;
+		margin-left: 0;
+		margin-bottom: 30px;
+		margin-top: -65px;
+		width: 100%;
+	}
+	#author img {
+		display: none;
+	}
+	#author span {
+		display: block;
+		font-size: .8em;
+	}
+	#article .section {
+		width: 90%;
+	}
+	#section1 .caption{
+		display:none;
+	}
+	.pullout{
+		min-width: 40%;
+	}
+	.right{		
+		margin-right: 0;
+	}
+	.left{
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width : 1024 px) {
+	.header h2{
+		font-size: 1.7em;
+		line-height: 25px;
+		text-align: left;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
 }
