@@ -26,6 +26,11 @@ hr.double-rule {
 del{
 	display: none;
 }
+
+.margin-adjust{
+	padding: 10px;
+	margin-top: -55px;
+}
 /*--------------custom Nav-----------------------------*/
 #customNav{
 	position: fixed;
@@ -83,13 +88,13 @@ del{
 	left: 0;
 	bottom: -1px;
 	right: 0;
-	background-image: url('http://www2.palmbeachpost.com/projects/news/nationalparks/img/cover.jpg');
+	background-image: url('../img/cover.jpg');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	background-position: 25% 95%;
+  	background-position: 25% 40%;
 }
 
 #hed{
@@ -301,19 +306,19 @@ del{
 		border:none;
 		min-height:10px;
 	}
-
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	#hed h1{
+		font-size: 27px;
+		line-height: 25px;
+	}	
 }
 
-@media only screen and (max-width : 768px) {
-	#hed h1{
-		font-size: 35px;
-		line-height: 30px;
-	}	
+@media only screen and (max-width : 768px) {	
 	#author{
 		position: relative;
 		margin-left: 0;
 		margin-bottom: 30px;
-		margin-top: -65px;
 		width: 100%;
 	}
 	#author img {
@@ -347,43 +352,3 @@ del{
 	}
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
-}
