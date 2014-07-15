@@ -74,7 +74,7 @@ function loadGraphics(){
 		.enter().append("circle")
 		.attr("id",function(d,i){return "park"+i;})
 		.attr("class","park")
-		.style("fill",'#ff0000')
+		.style("fill",'#EFC94C')
 		.attr("r",5)
 		.attr("cx",function(d){return xScale(d.long)})
 		.attr("cy",function(d){return yScale(d.lat)+7});
@@ -84,7 +84,17 @@ function loadGraphics(){
 		.enter().append("text")
 		.text(function(d){return d.name;})
 		.attr("x", function(d){return xScale(d.long)+10})
-		.attr("y",function(d){return yScale(d.lat)+12});	
+		.attr("y",function(d){return yScale(d.lat)+12});
+
+		_.each($('svg text'),function(d,i){
+			var rect = d.getBBox();
+			mapDiv.insert("rect","text")
+			.attr("x", rect.x)
+			.attr("y",rect.y)
+			.attr("width",rect.width)
+			.attr("height",rect.height)
+			.attr("fill","rgba(255,255,255,.7)");
+		});
 
 		loadImgs();
 	});
@@ -101,7 +111,7 @@ function loadGraphics(){
 		var path= mapDiv.insert("path","circle")
 		.attr("d",line([from,to]))
 		.attr("id",id)
-		.attr("stroke", "red")
+		.attr("stroke", "#E27A3F")
 		.attr("stroke-width",2);
 
 		var totalLength = path.node().getTotalLength();
