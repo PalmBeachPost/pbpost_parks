@@ -240,6 +240,7 @@ del{
 	width: 100%;
 	margin: 30px auto;
 	border-bottom: 1px solid black;
+	height: 10%;
 }
 
 .header h2{
@@ -261,4 +262,9 @@ del{
 	height: 100%;
 	max-width: 50%;
 	vertical-align: inherit;
+}
+/*-------------------------------------graphic----------------------------------------------*/
+#graphic{
+	width: 600px;
+	width: 100%;
 }

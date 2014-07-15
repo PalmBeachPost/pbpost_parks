@@ -2,9 +2,11 @@
 	"parks":[
 		{
 			"id": 1,
-			"name": "Yellowstone",
-			"lat":44.36,
-			"long":-110.30,
+			"name": "Mound City",
+			"fullName":"Mound City Group National Monument, Chillicothe, Ohio",
+			"desc":"A monument devoted to the burial grounds and earthworks of a vanished culture – the prehistoric Hopewell Indians. Perhaps the biggest problem plaguing the park were the pesky ground squirrels, who would often dig into the mounds and disturb the artifacts and bones.",
+			"lat":39.376196,
+			"long":-83.006566,
 			"photos":[
 				{
 					"src":"./img/img1.jpg",
@@ -15,10 +17,12 @@
 					"caption":"This is caption for this image 2"
 				}
 			]
-		},		
+		},
 		{
 			"id": 2,
 			"name": "Saratoga",
+			"fullName":"Saratoga, N.Y., National Historic Park",
+			"desc":"Near Saratoga Lake and the Hudson River in upstate New York, the site signifies the location that after numerous bloody battles in 1777, British General John Burgoyne surrendered to American General Horatio Gates, signifying a major turning point for the Americans during the Revolutionary War.",
 			"lat":42.998889,
 			"long":-73.6375,
 			"photos":[
@@ -35,24 +39,118 @@
 					"caption":"This is park 2 caption for this image 1"
 				}
 			]
-		},		
+		},	
 		{
 			"id": 3,
-			"name": "Grand Canyon",
-			"lat":36.0552608,
-			"long":-112.1218355
-		},
+			"name": "Washington,D.C.",
+			"fullName":"Washington,D.C.",
+			"desc":"My dad was temporarily assigned to the Washington, D.C. office to help develop an 11-point program for national park improvements. He was on a group task force that ended up being a two-year commitment.",
+			"lat":38.8935965,
+			"long":-77.014576,
+			"photos":[
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is park 2 caption for this image"
+				},
+				{
+					"src":"./img/cover.jpg",
+					"caption":"This is park 2 caption for this image 1"
+				},
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is park 2 caption for this image 1"
+				}
+			]
+		},	
 		{
 			"id": 4,
-			"name": "Independence",
-			"lat":39.949531,
-			"long":-75.149732
-		},
+			"name": "Yellowstone",
+			"fullName":"Yellowstone National Park",
+			"desc":"A spectacular western park known for geysers, hot springs, wilderness, grizzly bears, wolves, moose, herds of bison and elk. Established in 1872, Yellowstone was the country’s first national park and my dad was assigned to help with the 1972 centennial celebration.",
+			"lat":44.36,
+			"long":-110.30,
+			"photos":[
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is caption for this image"
+				},
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is caption for this image 2"
+				}
+			]
+		},		
 		{
 			"id": 5,
+			"name": "Morristown",
+			"fullName":"Morristown, N.J., National Historical Park",
+			"desc":"The park commemorates the sites of General Washington and the Continental army’s winter encampment of December 1779 to June 1780. This was the worst winter the army endured — even colder than two years earlier at Valley Forge.",
+			"lat":40.764845,
+			"long":-74.531681,
+			"photos":[
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is caption for this image"
+				},
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is caption for this image 2"
+				}
+			]
+		},	
+		{
+			"id": 6,
+			"name": "Grand Canyon",
+			"fullName":"Grand Canyon National Park",
+			"desc":"One of the world’s most powerful and spectacular sights. The canyon — an amazing 277 miles long, 10 miles wide and one mile deep — formed when the mighty Colorado River forged its way through the layers of rock while the Colorado Plateau was uplifted.",
+			"lat":36.0552608,
+			"long":-112.1218355,
+			"photos":[
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is caption for this image"
+				},
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is caption for this image 2"
+				}
+			]
+		},
+		{
+			"id": 7,
 			"name": "Olympic",
+			"fullName":"Olympic National Park",
+			"desc":"On the Washington state peninsula, just west of Seattle, the diverse ecosystems of this park feature a mountain range, rushing rivers, large lowland lakes, temperate rain forests and a huge stretch of Pacific wilderness coastline.",
 			"lat":47.96935,
-			"long":-123.49856
-		}
+			"long":-123.49856,
+			"photos":[
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is caption for this image"
+				},
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is caption for this image 2"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "Independence",
+			"fullName":"Independence National Historical Park",
+			"desc":"In just three square blocks in the city of Philadelphia, the symbols of the birth of freedom are preserved. Independence Hall, Congress Hall, Franklin Court and the Liberty Bell can all be visited in one day.",
+			"lat":39.949531,
+			"long":-75.149732,
+			"photos":[
+				{
+					"src":"./img/img1.jpg",
+					"caption":"This is caption for this image"
+				},
+				{
+					"src":"./img/img2.jpg",
+					"caption":"This is caption for this image 2"
+				}
+			]
+		}		
 	]
 }
