@@ -1,52 +1,71 @@
- #controls{
-    display: block;
-    position: relative;
-    height:30px;
-    width: 100%;
-  }
-
-  button#next{
-    display:block;
-    float:right;
-  }
-
-  button#prev{
-    display:block;
-    float:left;
-  }
-
   #main{
     margin: auto;
   }
 
+  button.right{
+    float: right;
+  }
   #map{
     background-image: url('../img/basemap.png');
     background-size: contain;
-    border:1px solid black;
+    border:1px solid #ddd;
     width:70%;
     height: 100%;
     padding: 0;
     margin: auto;
+  }
+  #fakemap{
+    background-image: url('../img/fakemap.png');
+    background-size: cover;
+    background-position: 50% 100%;
+    width: 99%;
+    height:10%;
+    max-height: 100px;
+    min-height: 50px;
+    box-shadow: 3px 3px 3px #888888;
+  }
+
+  #img-slideshow{
+    display: none;
+    overflow: hidden;
+  }
+
+  #img-slideshow .carousel-inner{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #img-slideshow .carousel-control{
+    background: none;
+    color: black;
+  }
+
+  #img-slideshow .item img{
+    margin: auto;
+  }
+
+  #img-slideshow .item .caption{
+    text-align: center;
+    margin-top: 5px;
   }
 
   #map text{
     font-size: 1em;
   }
 
+  #thumbs{
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+  }
   #thumbs img{
     width:50px;
     height: 50px;
     border: 2px solid gray;
     margin: 2px;
   }
-
-  #img{
-    width: 300px;
-    margin: auto;
-  }
-  #img img{
-    width:300px;
-  }
+ 
 @media only screen  and  (max-width : 480px){
   #map,#controls{
     width:100%;

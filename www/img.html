@@ -3,23 +3,34 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"> 
     <meta charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/graphicsstyle.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div id="controls">
-      <button id="prev">Prev</button>
-      <button id="next">Next</button>
-    </div>
     <div id="main">
+      <button class="left" id="prev"><span class="glyphicon glyphicon-chevron-left"></span>Prev</button>
+      <button class="right" id="next">Next<span class="glyphicon glyphicon-chevron-right"></span></button>
       <svg id="map"></svg>
-      <div id="img">
-        <p id="caption"></p>
+      <div id="img-slideshow" class="carousel slide">
+          <div id="fakemap"></div>
+          <div class="carousel-inner">                
+          </div>
+          <a class="left carousel-control" href="#img-slideshow" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#img-slideshow" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
       </div>
     </div>
     <div id="thumbs">
     </div>
     <!--JQUERY-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="./js/graphics.js"></script>
