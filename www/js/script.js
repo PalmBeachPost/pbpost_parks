@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var throttledResize = _.throttle(calcLayout, 100);
 	$(window).resize(throttledResize);
 
-	var pymparent = new pym.Parent('graphic', './img.html',{});
+	var pymparent = new pym.Parent('graphic', 'http://www2.palmbeachpost.com/projects/news/parks/img.html',{});
 });
 
 function calcLayout(){
@@ -17,5 +17,5 @@ function calcLayout(){
 }
 
 function MedleyShiv(){
-	$('.ad-leaderboard').first().remove();
+	$('.ad-leaderboard').first().hide();
 }

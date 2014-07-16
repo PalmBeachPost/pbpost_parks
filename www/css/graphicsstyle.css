@@ -49,6 +49,8 @@
 
   #img-slideshow .item img{
     margin: auto;
+    max-height: 80%;
+    width: auto;
   }
 
   #img-slideshow .item .caption{

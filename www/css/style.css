@@ -31,6 +31,10 @@ del{
 	padding: 10px;
 	margin-top: -55px;
 }
+
+.flatpages{
+	margin-top: -30px;
+}
 /*--------------custom Nav-----------------------------*/
 #customNav{
 	position: fixed;
@@ -39,6 +43,7 @@ del{
 	top: 0;
 	left: 0;	
 	background: rgba(0,0,0,.6);
+	background: #006cb7;
 	z-index: 8;
 }
 #customNav a{
@@ -206,6 +211,20 @@ del{
 	padding-top: 10px;
 	background: #f5f4ff;
 	font-style: italic;
+}
+.info{
+	min-height: 50px;
+	color:gray;
+	font-size: 13px;
+	line-height: 16px;
+	padding-top: 10px;
+	background: #f5f4ff;
+	font-style: italic;
+	padding: 8px;
+	border: 2px solid gray;
+	border-top:0;
+	border-bottom: 0;
+	margin-bottom: 20px;
 }
 
 .caption.right{
